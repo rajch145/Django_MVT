@@ -21,7 +21,7 @@ import UserApp
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/',views.index),
+    path('index/',views.index, name='index'),
     path('users/', include('UserApp.urls')),
     path('all/', include('UserApp.urls'))
 
